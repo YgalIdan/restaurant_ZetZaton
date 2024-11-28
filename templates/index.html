@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>מסעדת זית זיתון</title>
 </head>
 <body>
-    <h1>Restaurant Zet Zaton</h1>
+    <div align="center">
+        <h1>תפריט חגי תשרי</h1>
+        <p>יש להזמין עד 48 שעות לפני שעת המשלוח או האיסוף.<br>
+        מעל 200 ש"ח הזמנה, משלוח חינם באזור חיפה</p>
+    </div>
+    <form action="/sumbit" method="POST">
+        <div align="center">
+            <h1>מנות ראשונות / סלטים</h1>
+            <h2>45 ש"ח - מחיר למגש לארבעה סועדים</h2>
+            <p>
+                <lable>
+                    <input type="checkbox" name="first" value="Option 1">
+                    סלט ארטישוק פטריות טריים, שרי ופסטו
+                </lable><br>
+                <lable>
+                    <input type="checkbox" name="first" value="Option 1">
+                    סלט גרגיר אבוקדו, רימונים ותפוח עץ
+                </lable>
+            </p>
+        </div>
+    </form>
 </body>
 </html>
