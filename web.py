@@ -1,7 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template, url_for
 
 web = Flask(__name__)
 
-@app.route("/")
+@web.route('/')
 def index():
-    return render_tamplate('templates\index.html')
+    return render_template("index.html")
+
+if __name__ == '__main__':
+    web.run(debug=True)
