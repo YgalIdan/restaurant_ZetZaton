@@ -28,7 +28,6 @@ menu_second = [
     {"name": "טורטיה קבב", "price": 60},
     {"name": "טרטר עגל", "price": 75},
 ]
-
 menu_main = [
     {"name": "כתף כבש במילוי פירות יבשים או אורז צנוברים", "price": 0},
     {"name": "פילה עגל בתנור במילוי רימונים ערמונים ארטישוק", "price": 0},
@@ -43,7 +42,7 @@ menu_main = [
 
 @web.route('/')
 def index():
-    return render_template("index.html", menu=menu_first)
+    return render_template("index.html", menuF=menu_first, menuS=menu_second, menuM=menu_main)
 
 if __name__ == '__main__':
-    web.run(debug=True)
+    web.run(host="10.0.0.32", port=6789, debug=True)
