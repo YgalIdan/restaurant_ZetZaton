@@ -12,19 +12,50 @@
         <h1>תפריט חגי תשרי</h1>
         <p>יש להזמין עד 48 שעות לפני שעת המשלוח או האיסוף</p>
     </header>
-    <div class="menu-section">
-        <h2>מנות ראשונות / סלטים</h2>
-        {% for item in menu %}
-        <div class="menu-item">
-            <span>{{item.name}}</span>
-            <span class="price">{{item.price}}₪</span>
-            <div class="counter">
-                <button class="decrement">-</button>
-                <input type="text" value="0">
-                <button class="increment">+</button>
+    <div class="container">
+        <div class="menu-section">
+            <h2>מנות ראשונות / סלטים</h2>
+            {% for item in menuF %}
+            <div class="menu-item">
+                <span class="span">{{item.name}}</span>
+                <span class="price">{{item.price}}₪</span>
+                <div class="counter">
+                    <button class="decrement">-</button>
+                    <input type="text" value="0" disabled>
+                    <button class="increment">+</button>
+                </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+        <div class="menu-section">
+            <h2>מנות ראשונות / סלטים</h2>
+            {% for item in menuS %}
+            <div class="menu-item">
+                <span class="span">{{item.name}}</span>
+                <span class="price">{{item.price}}₪</span>
+                <div class="counter">
+                    <button class="decrement">-</button>
+                    <input type="text" value="0" disabled>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="menu-section">
+            <h2>מנות ראשונות / סלטים</h2>
+            {% for item in menuM %}
+            <div class="menu-item">
+                <span class="span">{{item.name}}</span>
+                <span class="price">{{item.price}}₪</span>
+                <div class="counter">
+                    <button class="decrement">-</button>
+                    <input type="text" value="0" disabled>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
     <footer>
         <button class="checkout-btn">המשך להזמנה</button>
     </footer>
